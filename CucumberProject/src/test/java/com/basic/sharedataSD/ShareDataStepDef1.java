@@ -40,7 +40,7 @@ public class ShareDataStepDef1 {
 	
 	@When("User Mobile field should be blank")
 	public void user_Mobile_field_should_be_blank() throws InterruptedException{
-		String mobileActual =driver.findElement(By.xpath("//input[@id='u_0_q']")).getAttribute("value");
+		String mobileActual =driver.findElement(By.name("reg_email__")).getAttribute("value");
 		Assert.assertEquals("", mobileActual);
 		Thread.sleep(1000);
 	}
